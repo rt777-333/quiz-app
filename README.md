@@ -1,12 +1,36 @@
-# React + Vite
+🎯 Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive quiz application built with React and Tailwind CSS. Users can select quiz topics and difficulty levels, answer questions one by one, and view their final score. The quiz questions are fetched from the Open Trivia Database API.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Select quiz topic and difficulty level.
 
-## Expanding the ESLint configuration
+Fetch trivia questions dynamically from the API.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Multiple-choice and true/false questions.
+
+Score calculation at the end of the quiz.
+
+Option to retake or start a new quiz.
+
+Responsive design with Tailwind CSS.
+
+Deployed on Netlify/Vercel.
+
+🌐 API Used
+
+Open Trivia Database API
+
+⚛️ Tech Stack
+
+React (Frontend)
+
+Tailwind CSS (Styling)
+
+Axios / Fetch API (Data fetching)
+
+Netlify/Vercel (Deployment)
+🛠️ Installation & Setup
+
+Clone the repository:
