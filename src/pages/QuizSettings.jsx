@@ -1,0 +1,33 @@
+import { useNavigate } from "react-router-dom";
+import QuizStart from "../components/QuizStart";
+
+const QuizSettings = () => {
+  const navigate = useNavigate();
+
+  const handleStartQuiz = async (settings) => {
+    // Navigate to the quiz page with the settings
+    navigate("/quiz", { state: { settings } });
+  };
+
+  return (
+    <div className="min-h-screen bg-gray-50 py-12 px-4">
+      <div className="max-w-6xl mx-auto">
+        {/* Page Header */}
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            Quiz Settings
+          </h1>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Customize your quiz experience by selecting your preferred category,
+            difficulty, and number of questions.
+          </p>
+        </div>
+
+        {/* Quiz Start Component */}
+        <QuizStart onStartQuiz={handleStartQuiz} loading={false} />
+      </div>
+    </div>
+  );
+};
+
+export default QuizSettings;
